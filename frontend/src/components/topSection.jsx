@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Text } from "@chakra-ui/react";
+import { Box, Button, Spacer, Text } from "@chakra-ui/react";
 import img1 from "./images/child-volunteer-landscaping.webp";
 const TopSection = () => {
   const fontStyle = {
@@ -7,6 +7,10 @@ const TopSection = () => {
   };
   return (
     <Box
+      display={"flex"}
+      alignItems={"center"}
+      flexDirection={"column"}
+      justifyContent={"space-around"}
       w={"80%"}
       m={"auto"}
       mt={"80px"}
@@ -15,19 +19,33 @@ const TopSection = () => {
       border={"2 px solid red"}
       backgroundSize="cover"
       backgroundImage={`url(${img1})`}
-      display={"flex"}
-      flexDirection={"column"}
-      alignItems={"center"}
     >
-      <Text fontSize="50px" color="white" style={fontStyle}>
+      <Spacer />
+      <Spacer />
+
+      <Text
+        // mt={"10"}
+        fontSize={"4xl"}
+        color="white"
+        // style={fontStyle}
+        // alignItems={"center"}
+      >
         Remarkable Outcomes
       </Text>
-      <Text w={"90%"} m={"0px"} fontSize="25px" color="white">
+      <Text
+        w={"90%"}
+        m={"0px"}
+        fontSize="2xl"
+        color="white"
+        // alignItems={"center"}
+      >
         Volunteer-Now is the largest network in the nonprofit world, with the
         most volunteers, nonprofits and opportunities to make a difference.
       </Text>
+      <Spacer />
       <Button
-        p={"20"}
+        p={"7"}
+        mb={"5"}
         mt={"90px"}
         border={"none"}
         bg={"tomato"}
@@ -35,9 +53,13 @@ const TopSection = () => {
         fontSize={"22px"}
         color={"white"}
         size="lg"
+        colorScheme="red"
+        alignItems={"center"}
       >
         Find Oportunities
       </Button>
+      <Spacer />
+      <Spacer />
     </Box>
   );
 };
