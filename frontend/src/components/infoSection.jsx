@@ -1,7 +1,7 @@
 import { Box, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import img from "./images/Screenshot 2023-12-14 165412.png";
-
+import img1 from "./images/Screenshot 2023-12-14 230253.png";
 const InfoSection = () => {
   return (
     <Box w={"80%"} display={"flex"} m={"auto"} mt="100px">
@@ -9,8 +9,11 @@ const InfoSection = () => {
         <Image w={"100%"} src={img}></Image>
       </Box>
       <Box w={"50%"}>
-        <Text>More people. More impact.</Text>
-        <Text>
+        <Text fontSize="6xl" fontWeight="200">
+          More people.
+          <br /> More impact.
+        </Text>
+        <Text fontSize={"2xl"}>
           Volunteer-Now is the most effective way to recruit highly qualified
           volunteers for your nonprofit. We match you with people who are
           passionate about and committed to your cause, and who can help when

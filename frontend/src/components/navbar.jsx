@@ -1,29 +1,33 @@
 import React from "react";
-import { Box, Image, HStack, Button, Text } from "@chakra-ui/react";
-import { Link, NavLink } from "react-router-dom";
+import { Box, Image, HStack, Button, Text, Link } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
 import logo from "./images/Volnow.png";
 const Navbar = () => {
   const linkStyle = {
+    "font-family": "Cursive",
     // "font-family": "Brush Script MT, Cursive",
     textDecoration: "none",
     color: "#004D40",
-    "font-weight": " 600",
+    "font-weight": "500",
   };
   const activeLink = {
+    "font-family": "Cursive",
     // textDecoration: "none",
-    color: "#004D40",
-    "font-weight": " 600",
+    color: "tomato",
+    "font-weight": " 500",
   };
   const fontStyle = {
     "font-family": "Cursive",
+    "font-weight": " 500",
   };
   return (
     <Box
+      // pos="relative"
       position="sticky"
       top={"0"}
       left={"0"}
-      bgColor={"white"}
-      h={"40px"}
+      backgroundColor="white"
+      h={"70px"}
       display="flex"
       justifyContent="space-around"
       p={15}
@@ -31,7 +35,7 @@ const Navbar = () => {
     >
       <Box display={"flex"} alignItems={"center"}>
         <Image h={"50px"} src={logo}></Image>
-        <Text fontSize={20} style={fontStyle}>
+        <Text fontSize={20} style={fontStyle} color={"teal.700"}>
           Volunteer-Now
         </Text>
       </Box>
@@ -42,6 +46,7 @@ const Navbar = () => {
         >
           Home
         </NavLink>
+
         <NavLink
           style={({ isActive }) => (isActive ? activeLink : linkStyle)}
           to="/Oportunities"
@@ -50,13 +55,15 @@ const Navbar = () => {
         </NavLink>
       </HStack>
       <Button
-        bg={"#009688"}
+        bg={"teal.500"}
         color="white"
         border={"none"}
         pl={5}
         pr={5}
-        p={12}
+        p={2}
+        colorScheme="teal.800"
         borderRadius={8}
+        style={fontStyle}
       >
         Log In
       </Button>
