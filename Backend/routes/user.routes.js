@@ -2,6 +2,7 @@ const express=require("express")
 const { UserModel } = require("../models/user.model");
 const bcrypt=require("bcrypt")
 const jwt=require("jsonwebtoken")
+require("dotenv").config()
 
 const userRouter=express.Router()
 
@@ -9,7 +10,7 @@ const userRouter=express.Router()
 userRouter.post("/register", async (req, res) => {
   const { username, email, password } = req.body;
   try {
-
+    
     bcrypt.hash(password, 5, async (err, hash) => {
       if (err) {
         res.status(200).send({ error: err });
