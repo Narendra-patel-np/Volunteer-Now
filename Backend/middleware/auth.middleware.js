@@ -1,20 +1,28 @@
 const jwt = require("jsonwebtoken");
-require("dotenv").config()
+const {BlacklistModel} = require("../models/blacklist.model");
+require("dotenv").config();
 
-const auth = (req, res, next) => {
-  const token = req.headers.authorization?.split(" ")[1];
-  if (token) {
-    jwt.verify(token, process.env.SECRET, (err, decoded) => {
-      if (decoded) {
-        console.log(decoded);
-        next();
-      } else {
-        res.send({ msg: "Incorrect Credential" });
+const authenticator = async (req,res,next) =>{
+  try{
+    let token = req?.headers?.authorization.split(" ")[1];
+    if(!token){
+      return res.status(400).send({"msg":"You are not authorized to acess this resource."})
+    }else{
+      const isTokenBlacklisted = await BlacklistModel.findOne({token});
+      if(isTokenBlacklisted){
+        return res.status(400).send({"msg":"Please Login again."})
       }
-    });
-  } else {
-    res.send({ msg: "You are not authorised" });
+      jwt.verify(token,process.env.SECRET_KEY,(err,decoded)=>{
+        if(decoded){
+          req.body.userId= decoded.userId;
+          next();
+        }else{
+          return res.status(404).send("You are not authorized");
+        }
+      })
+    }
+  }catch(error){
+    return res.status(404).send("You are not authorized");
   }
-};
-
-module.exports = { auth };
+}
+module.exports = {authenticator};
