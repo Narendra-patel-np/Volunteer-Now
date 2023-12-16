@@ -1,10 +1,12 @@
 import React from "react";
 import { Box, Button, Spacer, Text } from "@chakra-ui/react";
 import img1 from "./images/child-volunteer-landscaping.webp";
+import { useNavigate } from "react-router-dom";
 const TopSection = () => {
   const fontStyle = {
     "font-family": "Cursive",
   };
+  const Navigate = useNavigate();
   return (
     <Box
       display={"flex"}
@@ -44,6 +46,8 @@ const TopSection = () => {
       </Text>
       <Spacer />
       <Button
+        onClick={() => Navigate("/Oportunities")}
+        position={"static"}
         p={"7"}
         mb={"5"}
         mt={"90px"}
@@ -53,7 +57,7 @@ const TopSection = () => {
         fontSize={"22px"}
         color={"white"}
         size="lg"
-        colorScheme="red"
+        colorScheme="orange"
         alignItems={"center"}
       >
         Find Oportunities

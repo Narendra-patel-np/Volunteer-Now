@@ -1,7 +1,13 @@
 import React from "react";
+import Navbar from "../navbar";
 
 const OportunitiesPage = () => {
-  return <div>Oportunities page</div>;
+  return (
+    <>
+      <Navbar />
+      Oportunities
+    </>
+  );
 };
 
 export default OportunitiesPage;
