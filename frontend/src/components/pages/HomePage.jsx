@@ -4,6 +4,7 @@ import InfoSection from "../infoSection";
 import Stats from "../stats";
 import Carousal from "../carousal";
 import Navbar from "../navbar";
+import Footer from "../Footer";
 const HomePage = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Carousal />
       <InfoSection />
       <Stats />
+      <Footer/>
     </div>
   );
 };
