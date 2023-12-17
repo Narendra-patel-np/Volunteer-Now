@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const volunteerSchema = new mongoose.Schema({
+const appliedSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
@@ -51,8 +51,9 @@ const volunteerSchema = new mongoose.Schema({
     type: String, // Assuming you store the image URL or path as a string
     required: true,
   },
+  userId:String
 }, { versionKey: false });
 
-const volunteerModel = mongoose.model('Opportunitie', volunteerSchema);
+const AppliedModel = mongoose.model('AppliedJobs', appliedSchema);
 
-module.exports = volunteerModel;
+module.exports = AppliedModel;
