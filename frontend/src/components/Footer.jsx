@@ -7,69 +7,69 @@ import { FaFacebook, FaInstagram, FaTiktok, FaTwitter } from "react-icons/fa"
 export default function Footer() {
     return (
         <DIV>
-         <hr />   
-        <div className='main'>
-            <div className='first'>
-                <div className='logo'>
-                    <img src={logo} alt="logo"/>
-                    <Heading size={"md"} mt={"30px"}>Volunteer-Now</Heading>
+            <hr />
+            <div className='main'>
+                <div className='first'>
+                    <div className='logo'>
+                        <img src={logo} alt="logo" />
+                        <Heading size={"md"} mt={"30px"}>Volunteer-Now</Heading>
+                    </div>
+                    <p>Working with others, in a spirit of generosity and mutual respect, we want to help build a world where all people can lead free and dignified lives.</p>
+                    <Button bg='tomato' colorScheme='blue' color={"white"}>Donate to Volnow</Button>
                 </div>
-                <p>Working with others, in a spirit of generosity and mutual respect, we want to help build a world where all people can lead free and dignified lives.</p>
-                <Button  bg='tomato' colorScheme='blue' color={"white"}>Donate to Volnow</Button>
+                <div className='middle' ></div>
+                <div className='third'>
+                    <div>
+                        <h4>Discover</h4>
+                        <p>Jobs</p>
+                        <p>Internships</p>
+                        <p>Organizations</p>
+                        <p>Volunteer Opportunities</p>
+                        {/* <p>Grad Schools</p> */}
+                        {/* <p>Site Map</p> */}
+                    </div>
+                    <div>
+                        <h4>Post a Listing</h4>
+                        <p>Post a Job</p>
+                        <p>Sign Up</p>
+                        <p>Contact US</p>
+                        {/* <p>For Employers</p> */}
+                        {/* <p>For Grad Schools</p> */}
+                    </div>
+                    <div>
+                        <h4>Resources</h4>
+                        <p>Job Seeker Tools</p>
+                        <p>Career Advice</p>
+                        <p>Grad Resources</p>
+                        <p>Ideas for Action</p>
+                        {/* <p>Logo & Design</p> */}
+                        {/* <p>Newsletter</p> */}
+                    </div>
+                    <div>
+                        <h4>Learn More</h4>
+                        <p>About US</p>
+                        <p>Our Team</p>
+                        <p>Help & FAQ</p>
+                        <p>Contact Us</p>
+                        {/* <p>Terms of Service</p> */}
+                        {/* <p>Privacy Policy</p> */}
+                    </div>
+                </div>
             </div>
-            <div className='middle' ></div>
-            <div className='third'>
-                <div>
-                    <h4>Discover</h4>
-                    <p>Jobs</p>
-                    <p>Internships</p>
-                    <p>Organizations</p>
-                    <p>Volunteer Opportunities</p>
-                    {/* <p>Grad Schools</p> */}
-                    {/* <p>Site Map</p> */}
+            <div className='botttom'>
+                <div className='icons'>
+                    <FaTiktok className='icon' />
+                    <FaInstagram className='icon' />
+                    <FaFacebook className='icon' />
+                    <FaTwitter className='icon' />
                 </div>
                 <div>
-                    <h4>Post a Listing</h4>
-                    <p>Post a Job</p>
-                    <p>Sign Up</p>
-                    <p>Contact US</p>
-                    {/* <p>For Employers</p> */}
-                    {/* <p>For Grad Schools</p> */}
+                    <p>Copyright C 2023 Volnow.org</p>
                 </div>
                 <div>
-                    <h4>Resources</h4>
-                    <p>Job Seeker Tools</p>
-                    <p>Career Advice</p>
-                    <p>Grad Resources</p>
-                    <p>Ideas for Action</p>
-                    {/* <p>Logo & Design</p> */}
-                    {/* <p>Newsletter</p> */}
-                </div>
-                <div>
-                    <h4>Learn More</h4>
-                    <p>About US</p>
-                    <p>Our Team</p>
-                    <p>Help & FAQ</p>
-                    <p>Contact Us</p>
-                    {/* <p>Terms of Service</p> */}
-                    {/* <p>Privacy Policy</p> */}
+                    <p>English | Espanol | Portugues</p>
                 </div>
             </div>
-        </div>
-        <div className='botttom'>
-             <div className='icons'>
-                    <FaTiktok className='icon'/>
-                    <FaInstagram className='icon'/>    
-                    <FaFacebook className='icon'/>
-                    <FaTwitter className='icon'/>
-             </div>
-             <div>
-                <p>Copyright C 2023 Volnow.org</p>
-             </div>
-             <div>
-                <p>English | Espanol | Portugues</p>
-             </div>
-        </div>
         </DIV>
     )
 }
