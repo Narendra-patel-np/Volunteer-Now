@@ -52,7 +52,7 @@ const TopSection = () => {
         mb={"5"}
         mt={"90px"}
         border={"none"}
-        bg={"tomato"}
+        bg={"orange.400"}
         borderRadius={"15"}
         fontSize={"22px"}
         color={"white"}

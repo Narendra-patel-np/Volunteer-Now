@@ -34,7 +34,7 @@ const Stats = () => {
     },
   ];
   return (
-    <SimpleGrid columns={{ base: 2, sm: 4, md: 4 }} spacing={1} mt={12} mb={4}>
+    <SimpleGrid columns={{ base: 2, sm: 4, md: 4 }} spacing={1} mt={12} mb={10}>
       {statData.map((data) => (
         <Box key={data.id} p={{ base: 2, sm: 5 }} textAlign="center">
           <span style={{ color: "#ffb128", fontWeight: "bold", fontSize: 48 }}>
