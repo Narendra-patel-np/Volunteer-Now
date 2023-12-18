@@ -61,6 +61,12 @@ const Navbar = () => {
         >
           Find Oportunities
         </NavLink>
+        <NavLink
+          style={({ isActive }) => (isActive ? activeLink : linkStyle)}
+          to="/applied"
+        >
+          Applied For
+        </NavLink>
       </HStack>
       {/* <Button
         bg={"teal.500"}

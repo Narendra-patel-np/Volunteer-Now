@@ -23,11 +23,15 @@ const Login = () => {
   const Login = (e) => {
     e.preventDefault();
     if (auth) {
-      auth = false;
       axios
         .get("https://volnowbackend.up.railway.app/users/logout")
         .then((res) => {
           alert(JSON.stringify(res.data.msg));
+        })
+        .then((data) => {
+          auth = false;
+          Navigate("/login");
+          console.log("auth", auth);
         });
     } else {
       if (JSON.stringify(user) === JSON.stringify(LogUser)) {
