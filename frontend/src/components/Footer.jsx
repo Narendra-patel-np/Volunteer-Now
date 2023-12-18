@@ -1,10 +1,11 @@
-import React from 'react'
-import logo from "./images/Volnow.png"
-import { Button, Heading } from '@chakra-ui/react'
-import styled from 'styled-components'
-import { FaFacebook, FaInstagram, FaTiktok, FaTwitter } from "react-icons/fa"
+import React from "react";
+import logo from "./images/Volnow.png";
+import { Button, Heading } from "@chakra-ui/react";
+import styled from "styled-components";
+import { FaFacebook, FaInstagram, FaTiktok, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
+
     return (
         <DIV>
          <hr />   
@@ -56,22 +57,22 @@ export default function Footer() {
                 </div>
             </div>
         </div>
-        <div className='botttom'>
-             <div className='icons'>
-                    <FaTiktok className='icon'/>
-                    <FaInstagram className='icon'/>    
-                    <FaFacebook className='icon'/>
-                    <FaTwitter className='icon'/>
-             </div>
-             <div>
-                <p>Copyright C 2023 Volnow.org</p>
-             </div>
-             <div>
-                <p>English | Espanol | Portugues</p>
-             </div>
+      <div className="botttom">
+        <div className="icons">
+          <FaTiktok className="icon" />
+          <FaInstagram className="icon" />
+          <FaFacebook className="icon" />
+          <FaTwitter className="icon" />
         </div>
-        </DIV>
-    )
+        <div>
+          <p>Copyright C 2023 Volnow.org</p>
+        </div>
+        <div>
+          <p>English | Espanol | Portugues</p>
+        </div>
+      </div>
+    </DIV>
+  );
 }
 
 const DIV = styled.div`
@@ -148,35 +149,35 @@ const DIV = styled.div`
         padding-left: 85px;
     }
 
-  @media screen and (max-width:700px) {
-    .main{
-        display: flex;
-        flex-direction: column;
-        width: 86%;
-        margin: auto;
-        gap: 40px; 
-        margin-top: 80px;
-        /* color: white; */
+  @media screen and (max-width: 700px) {
+    .main {
+      display: flex;
+      flex-direction: column;
+      width: 86%;
+      margin: auto;
+      gap: 40px;
+      margin-top: 80px;
+      /* color: white; */
     }
-    .first{
-        margin: auto;
+    .first {
+      margin: auto;
     }
-    .middle{
-        display: none;
-    } 
-    .botttom{
-        width: 86%;
-        margin: auto;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        display: flex;
-        gap: 20px;
-        flex-direction: column;
+    .middle {
+      display: none;
     }
-    .icons{
-        margin: auto;
-        display: flex;
-        gap: 30px;
+    .botttom {
+      width: 86%;
+      margin: auto;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
     }
-  }   
-`
+    .icons {
+      margin: auto;
+      display: flex;
+      gap: 30px;
+    }
+  }
+`;
