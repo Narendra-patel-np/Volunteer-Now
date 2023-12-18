@@ -70,6 +70,6 @@ Our server ensures the integrity and security of your data, providing a reliable
 
 Experience the power of volunteering with VOLNOW, hosted gracefully on Vercel. Explore the features and start your journey of making a positive impact:
 
-<h1><strong>Vercel Link:</strong> <a href="https://volunteer-now.vercel.app/">volnow</a></h1>
+<h1><strong>Vercel Link:</strong> <a href="https://volunteer-now.vercel.app/" target="blank">volnow</a></h1>
 
 For any inquiries or assistance, our dedicated support team is here to help. Thank you for choosing VOLNOW; let's create a world of positive change together. 🌍✨
