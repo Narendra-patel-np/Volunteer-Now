@@ -1,5 +1,4 @@
-![Screenshot 2023-12-18 223749](https://github.com/Narendra-patel-np/space-explorer-5678/assets/121815825/b43bb511-5f7a-447c-9efa-31e9b3975a16)# Welcome to VOLNOW
-
+# Welcome to VOLNOW
 **VOLNOW** invites you to join a community dedicated to making a positive impact through volunteering. Our meticulously crafted web application is designed with a seamless blend of HTML, CSS, JavaScript, and React, offering you a gateway to a world of opportunities for meaningful contributions. Explore the following sections and embark on your journey of making a difference.
 
 ## 🌟 Frontend Pages
@@ -20,6 +19,8 @@ Explore a curated collection of volunteering opportunities. From diverse project
 
 ### 3. Registration Page 📝
 Ready to make a difference? Register on our platform to unlock exclusive features and connect with like-minded individuals.
+
+
 ![Screenshot 2023-12-18 224438](https://github.com/Narendra-patel-np/space-explorer-5678/assets/121815825/c35f849c-3724-46eb-a3d2-440f3cb306c3)
 ![Screenshot 2023-12-18 223418](https://github.com/Narendra-patel-np/space-explorer-5678/assets/121815825/483860fc-edad-4c66-9e89-08fd89c46d8f)
 
