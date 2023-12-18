@@ -25,10 +25,6 @@ Ready to make a difference? Register on our platform to unlock exclusive feature
 
 ![Registration Page](<Your Registration Page Image URL>)
 
-### 4. Admin Dashboard 🔒
-Empowering authorized personnel, our Admin Dashboard provides the tools to oversee projects, manage volunteers, and ensure a seamless volunteering experience.
-
-![Admin Dashboard](<Your Admin Dashboard Image URL>)
 
 ## 🚀 Tech Stacks
 
