@@ -50,6 +50,21 @@ Our robust backend, powered by the latest technologies, ensures a secure and eff
 - **Mongoose**: An elegant MongoDB object modeling tool for Node.js, ensuring smooth interaction with the database.
 - **User Hashing**: Secure user data with advanced hashing techniques to protect sensitive information.
 
+## 🌐 Backend Server
+
+Our robust Backend Server powers VOLNOW, providing essential data and functionality through a network of well-defined endpoints:
+
+- **Server Link**: [https://volnow-backend-server.com](https://volnow-backend-server.com)
+- **Endpoints**:
+  1. `/registers`: Seamlessly manage user data, enabling smooth registration and authentication processes.
+  2. `/login`: Access the platform securely with our login endpoint, ensuring a protected user experience.
+  3. `/logout`: Safely log out from VOLNOW, securing your session and data.
+  4. `/volunteer/opportunities`: Explore a diverse array of volunteering opportunities, each with detailed information for a meaningful experience.
+  5. `/appliedjobs`: Engage with your applied jobs and track your volunteering journey through this interactive endpoint.
+
+Our server ensures the integrity and security of your data, providing a reliable foundation for your volunteering endeavors. Thank you for choosing VOLNOW; let's make a positive impact together. 🌐🤝
+
+
 ## 🌐 Deployment
 
 Experience the power of volunteering with VOLNOW, hosted gracefully on Vercel. Explore the features and start your journey of making a positive impact:
