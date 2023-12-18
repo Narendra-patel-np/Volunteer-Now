@@ -26,16 +26,33 @@ const Register = () => {
   const Register = (e) => {
     e.preventDefault();
     // console.log(user);
-    if (JSON.stringify(user) === JSON.stringify(initUser)) {
-      alert("Please fill the details");
-    } else {
-      axios
-        .post("https://volnowbackend.up.railway.app/users/register", user)
-        .then((res) => {
-          alert(JSON.stringify(res.data));
-          setUser(initUser);
-        });
-      Navigate("/login");
+    try {
+      if (JSON.stringify(user) === JSON.stringify(initUser)) {
+        alert("Please fill the details");
+      } else {
+        // fetch("https://rich-lime-seagull-robe.cyclic.app/users/register", {
+        //   method: "POST",
+        //   body: user,
+        // })
+        //   .then((res) => {
+        //     return res.json();
+        //   })
+        //   .then((data) => {
+        //     console.log(data);
+        //   });
+        axios
+          .post(
+            "https://rich-lime-seagull-robe.cyclic.app/users/register",
+            user
+          )
+          .then((res) => {
+            alert(JSON.stringify(res.data));
+            setUser(initUser);
+          });
+        Navigate("/login");
+      }
+    } catch (error) {
+      console.log(error);
     }
   };
   return (

@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 export let auth = false;
 const Login = () => {
+  let token = localStorage.getItem("token");
   const Navigate = useNavigate();
   // let [auth, setAuth] = useState(false);
   const loginUser = {
@@ -20,40 +21,44 @@ const Login = () => {
     // console.log(LogUser);
     setUser(LogUser);
   };
+
   const Login = (e) => {
     e.preventDefault();
-    if (auth) {
+    // if (token) {
+    //   axios
+    //     .get("https://volnowbackend.up.railway.app/users/logout")
+    //     .then((res) => {
+    //       alert(JSON.stringify(res.data.msg));
+    //       localStorage.clear();
+    //     })
+    //     .then((data) => {
+    //       // auth = false;
+    //       localStorage.clear();
+
+    //       Navigate("/login");
+    //       // console.log("auth", auth);
+    //     });
+    // } else {
+    if (JSON.stringify(user) === JSON.stringify(LogUser)) {
+      alert("Please fill the details");
+    } else {
       axios
-        .get("https://volnowbackend.up.railway.app/users/logout")
+        .post("https://rich-lime-seagull-robe.cyclic.app/users/login", user)
         .then((res) => {
+          console.log(res);
           alert(JSON.stringify(res.data.msg));
+          let token = res.data?.token;
+          if (res.data?.token !== undefined) {
+            localStorage.setItem("token", token);
+          }
+          setUser(loginUser);
         })
         .then((data) => {
-          auth = false;
-          Navigate("/login");
+          Navigate("/");
           console.log("auth", auth);
         });
-    } else {
-      if (JSON.stringify(user) === JSON.stringify(LogUser)) {
-        alert("Please fill the details");
-      } else {
-        axios
-          .post("https://volnowbackend.up.railway.app/users/login", user)
-          .then((res) => {
-            console.log(res);
-            alert(JSON.stringify(res.data.msg));
-            let token = res.data?.token;
-            if (res.data?.token !== undefined) {
-              localStorage.setItem("token", token);
-            }
-            setUser(loginUser);
-          })
-          .then((data) => {
-            Navigate("/");
-            console.log("auth", auth);
-          });
-        //
-      }
+      //
+      // }
     }
     // console.log(user);
   };
