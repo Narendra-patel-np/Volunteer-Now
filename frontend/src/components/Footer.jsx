@@ -15,7 +15,7 @@ export default function Footer() {
                     <Heading size={"md"} mt={"30px"}>Volunteer-Now</Heading>
                 </div>
                 <p>Working with others, in a spirit of generosity and mutual respect, we want to help build a world where all people can lead free and dignified lives.</p>
-                <Button colorScheme='blue'>Donate to Volnow</Button>
+                <Button  bg='tomato' colorScheme='blue' color={"white"}>Donate to Volnow</Button>
             </div>
             <div className='middle' ></div>
             <div className='third'>
@@ -25,16 +25,16 @@ export default function Footer() {
                     <p>Internships</p>
                     <p>Organizations</p>
                     <p>Volunteer Opportunities</p>
-                    <p>Grad Schools</p>
-                    <p>Site Map</p>
+                    {/* <p>Grad Schools</p> */}
+                    {/* <p>Site Map</p> */}
                 </div>
                 <div>
                     <h4>Post a Listing</h4>
                     <p>Post a Job</p>
                     <p>Sign Up</p>
                     <p>Contact US</p>
-                    <p>For Employers</p>
-                    <p>For Grad Schools</p>
+                    {/* <p>For Employers</p> */}
+                    {/* <p>For Grad Schools</p> */}
                 </div>
                 <div>
                     <h4>Resources</h4>
@@ -42,8 +42,8 @@ export default function Footer() {
                     <p>Career Advice</p>
                     <p>Grad Resources</p>
                     <p>Ideas for Action</p>
-                    <p>Logo & Design</p>
-                    <p>Newsletter</p>
+                    {/* <p>Logo & Design</p> */}
+                    {/* <p>Newsletter</p> */}
                 </div>
                 <div>
                     <h4>Learn More</h4>
@@ -51,8 +51,8 @@ export default function Footer() {
                     <p>Our Team</p>
                     <p>Help & FAQ</p>
                     <p>Contact Us</p>
-                    <p>Terms of Service</p>
-                    <p>Privacy Policy</p>
+                    {/* <p>Terms of Service</p> */}
+                    {/* <p>Privacy Policy</p> */}
                 </div>
             </div>
         </div>
@@ -76,14 +76,15 @@ export default function Footer() {
 
 const DIV = styled.div`
     .main{
-        /* background-color: #04152D; */
+         background-color: #f5f5f5; 
         /* border: 2px solid green; */
-        width: 86%;
+        width: 100%;
         margin: auto;
         display: flex;
         gap: 40px; 
         margin-top: 80px;
         /* color: white; */
+        padding: 100px;
     }
     .middle{
         border:0.5px solid lightgray;
@@ -119,7 +120,7 @@ const DIV = styled.div`
     }
     .third{
         display: flex;
-        gap: 20px;
+        gap: 80px;
         margin: 0 auto 0 auto;
         text-align: left;
     }
@@ -133,13 +134,18 @@ const DIV = styled.div`
     .third div p{
         cursor: pointer;
     }
+    .third div p:hover{
+        color: #C05621;
+    }
     .botttom{
-        width: 86%;
+        background-color: #f5f5f5;
+        width: 100%;
+        padding:20px;
         margin: auto;
         justify-content: space-between;
         display: flex;
-        margin-top: 40px;
-        margin-bottom: 20px;
+        padding-right: 85px;
+        padding-left: 85px;
     }
 
   @media screen and (max-width:700px) {
