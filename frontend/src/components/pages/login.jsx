@@ -1,8 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Button, Input, Stack, Text } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Login = () => {
+  const Navigate = useNavigate();
+  const loginUser = {
+    email: "",
+    password: "",
+  };
+  let LogUser;
+  const [user, setUser] = useState(loginUser);
+  const handleChange = (e) => {
+    LogUser = {
+      ...user,
+      [e.target.name]: e.target.value,
+    };
+    // console.log(LogUser);
+    setUser(LogUser);
+  };
+  const Login = (e) => {
+    e.preventDefault();
+    // console.log(user);
+    if (JSON.stringify(user) === JSON.stringify(LogUser)) {
+      alert("Please fill the details");
+    } else {
+      axios
+        .post("https://volnowbackend.up.railway.app/users/login", user)
+        .then((res) => {
+          console.log(res.data);
+          alert(JSON.stringify(res.data.msg));
+          setUser(loginUser);
+        });
+      // Navigate("/");
+    }
+  };
   return (
     <Box
       w={"25%"}
@@ -29,10 +61,8 @@ const Login = () => {
           type="text"
           name="email"
           _placeholder={{ color: "black" }}
-          // isInvalid
-          // errorBorderColor="orange.400"
-          // onChange={handleChange}
-          // value={newProduct.category}
+          onChange={handleChange}
+          value={user.email}
         />
         <Input
           variant="filled"
@@ -40,11 +70,8 @@ const Login = () => {
           type="password"
           name="password"
           _placeholder={{ color: "black" }}
-
-          // isInvalid
-          // errorBorderColor="orange.400"
-          // value={newProduct.price}
-          // onChange={handleChange}
+          value={user.password}
+          onChange={handleChange}
         />
 
         <Button
@@ -53,7 +80,7 @@ const Login = () => {
           m={"20px 5px"}
           color={"white"}
           _hover={{ bg: "#e89f22" }}
-          // onClick={AddProduct}
+          onClick={Login}
         >
           Log In
         </Button>

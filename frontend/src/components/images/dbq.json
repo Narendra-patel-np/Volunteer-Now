@@ -1,0 +1,284 @@
+ [
+      {
+        "title": "Community Cleanup",
+        "organization": "Green Volunteers",
+        "location": "City Park, Anytown",
+        "description": "Join us for a community cleanup event to make our city greener!",
+        "date": "2023-12-15",
+        "time": "10:00 AM - 2:00 PM",
+        "contact": {
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phone": "555-123-4567"
+        },
+        "image": "https://cdn.filestackcontent.com/no_metadata/output=format:webp/resize=w:200,h:200,fit:max/quality=value:70/compress/cache=expiry:max/mz9Gb1eXTCqtHOicqdiJ"
+      },
+      {
+        "title": "Food Bank Assistance",
+        "organization": "Helping Hands Foundation",
+        "location": "123 Main St, Anytown",
+        "description": "Assist in sorting and packaging food items at the local food bank.",
+        "date": "2023-12-18",
+        "time": "2:00 PM - 5:00 PM",
+        "contact": {
+          "name": "Jane Smith",
+          "email": "jane.smith@example.com",
+          "phone": "555-987-6543"
+        },
+        "image":"https://cdn.filestackcontent.com/no_metadata/output=format:webp/resize=w:668,h:501,fit:max/quality=value:70/compress/cache=expiry:max/eWI6gwieS6dhpq2RtJJk"
+      },
+      {
+        "title": "Animal Shelter Volunteer",
+        "organization": "Paws and Claws Rescue",
+        "location": "567 Oak St, Anytown",
+        "description": "Help care for and socialize with animals at the local animal shelter.",
+        "date": "2023-12-20",
+        "time": "1:00 PM - 4:00 PM",
+        "contact": {
+          "name": "Alice Johnson",
+          "email": "alice.johnson@example.com",
+          "phone": "555-555-5555"
+        },
+        "image":"https://cdn.filestackcontent.com/no_metadata/output=format:webp/resize=w:200,h:200,fit:max/quality=value:70/compress/cache=expiry:max/vjc94Bd1Q52fgcz5Bs3w"
+      },
+      {
+        "title": "Senior Center Companionship",
+        "organization": "Generations Together",
+        "location": "Senior Center, Anytown",
+        "description": "Spend time with seniors, engage in conversations, and assist with activities.",
+        "date": "2023-12-22",
+        "time": "3:00 PM - 6:00 PM",
+        "contact": {
+          "name": "Robert Davis",
+          "email": "robert.davis@example.com",
+          "phone": "555-333-4444"
+        },
+        "image":"https://cdn.filestackcontent.com/no_metadata/output=format:webp/resize=w:668,h:890,fit:max/quality=value:70/compress/cache=expiry:max/t6L4PeCS4CFyTILaG2DQ"
+      },
+      {
+        "title": "Educational Tutoring",
+        "organization": "Future Scholars Initiative",
+        "location": "Local Library, Anytown",
+        "description": "Provide tutoring and support to students in various subjects.",
+        "date": "2023-12-25",
+        "time": "4:00 PM - 7:00 PM",
+        "contact": {
+          "name": "Emily Turner",
+          "email": "emily.turner@example.com",
+          "phone": "555-876-5432"
+        },
+        "image":"https://res.cloudinary.com/dktp1ybbx/image/upload/c_limit,h_180,w_180/f_auto,fl_lossy,q_auto/v1702751734/organization/prod/1241884/rCwrf72qhc.jpg"
+      },
+      {
+        "title": "Hospitality for Seniors",
+        "organization": "Caring Hearts Foundation",
+        "location": "Sunset Senior Living, Anytown",
+        "description": "Provide hospitality to seniors, share stories, and create a warm and welcoming environment.",
+        "date": "2023-12-20",
+        "time": "2:00 PM - 5:00 PM",
+        "contact": {
+          "name": "Amanda Johnson",
+          "email": "amanda.johnson@example.com",
+          "phone": "555-999-8888"
+        },
+        "image": "https://cdn.filestackcontent.com/no_metadata/output=format:webp/resize=w:200,h:200,fit:max/quality=value:70/compress/cache=expiry:max/mz9Gb1eXTCqtHOicqdiJ"
+      },
+      {
+        "title": "Art Workshop for Seniors",
+        "organization": "Creative Connections",
+        "location": "Art Studio, Anyville",
+        "description": "Lead an art workshop for seniors, exploring creativity through various artistic activities.",
+        "date": "2023-12-20",
+        "time": "2:00 PM - 5:00 PM",
+        "contact": {
+          "name": "Anna Rodriguez",
+          "email": "anna.rodriguez@example.com",
+          "phone": "555-777-8888"
+        },
+        "image":"https://cdn.filestackcontent.com/no_metadata/output=format:webp/resize=w:668,h:501,fit:max/quality=value:70/compress/cache=expiry:max/eWI6gwieS6dhpq2RtJJk"
+      },
+      {
+        "title": "Virtual Storytelling Session",
+        "organization": "Digital Connections",
+        "location": "Online",
+        "description": "Join our virtual storytelling session for seniors. Share stories, engage in conversations, and bring joy to their day.",
+        "date": "2023-12-22",
+        "time": "4:00 PM - 5:30 PM",
+        "contact": {
+          "name": "Emma Williams",
+          "email": "emma.williams@example.com",
+          "phone": "555-555-1234"
+        },
+        "image":"https://cdn.filestackcontent.com/no_metadata/output=format:webp/resize=w:200,h:200,fit:max/quality=value:70/compress/cache=expiry:max/vjc94Bd1Q52fgcz5Bs3w"
+      },
+      {
+        "title": "Art and Craft Workshop",
+        "organization": "Creative Expressions Society",
+        "location": "Community Center, Artville",
+        "description": "Join our art and craft workshop, unleash your creativity, and create beautiful artworks.",
+        "date": "2023-12-20",
+        "time": "2:00 PM - 5:00 PM",
+        "contact": {
+          "name": "Amanda Roberts",
+          "email": "amanda.roberts@example.com",
+          "phone": "555-789-0123"
+        },
+        "image":"https://cdn.filestackcontent.com/no_metadata/output=format:webp/resize=w:668,h:890,fit:max/quality=value:70/compress/cache=expiry:max/t6L4PeCS4CFyTILaG2DQ"
+      },
+      {
+        "title": "Hospital Visitation Program",
+        "organization": "Healthcare Harmony",
+        "location": "City Hospital, Anytown",
+        "description": "Brighten the day of hospital patients by providing companionship and support.",
+        "date": "2023-12-20",
+        "time": "2:30 PM - 5:30 PM",
+        "contact": {
+          "name": "Jessica Rodriguez",
+          "email": "jessica.rodriguez@example.com",
+          "phone": "555-777-8888"
+        },
+        "image":"https://res.cloudinary.com/dktp1ybbx/image/upload/c_limit,h_180,w_180/f_auto,fl_lossy,q_auto/v1702751734/organization/prod/1241884/rCwrf72qhc.jpg"
+      },
+      {
+        "title": "Children's Art Workshop",
+        "organization": "Creative Kids Foundation",
+        "location": "Community Center, Anytown",
+        "description": "Facilitate an art workshop for children, encouraging creativity and self-expression.",
+        "date": "2023-12-20",
+        "time": "2:00 PM - 5:00 PM",
+        "contact": {
+          "name": "Emma Thompson",
+          "email": "emma.thompson@example.com",
+          "phone": "555-999-8888"
+        },
+        "image":"https://www.happiness.com/community/uploads/monthly_2019_05/why-volunteering-is-important-benefits-loneliness.jpg.8f841bb85ca8be7dd00ad472b7499abe.jpg"
+      },
+      {
+        "title": "Art Therapy for Seniors",
+        "organization": "Creative Connections",
+        "location": "Art Studio, Anytown",
+        "description": "Engage in art therapy activities with seniors, fostering creativity and meaningful connections.",
+        "date": "2024-01-10",
+        "time": "2:00 PM - 5:00 PM",
+        "contact": {
+          "name": "Emily Rodriguez",
+          "email": "emily.rodriguez@example.com",
+          "phone": "555-777-8888"
+        },
+        "image":"https://www.happiness.com/community/uploads/monthly_2019_05/why-volunteering-is-important-benefits-loneliness.jpg.8f841bb85ca8be7dd00ad472b7499abe.jpg"
+      },
+      {
+        "title": "Youth Mentorship Program",
+        "organization": "Future Leaders Foundation",
+        "location": "Youth Center, Anytown",
+        "description": "Inspire and guide the next generation by participating in our youth mentorship program.",
+        "date": "2023-12-20",
+        "time": "4:00 PM - 7:00 PM",
+        "contact": {
+          "name": "Emma Thompson",
+          "email": "emma.thompson@example.com",
+          "phone": "555-777-8888"
+        },
+        "image":"https://www.happiness.com/community/uploads/monthly_2019_05/why-volunteering-is-important-benefits-loneliness.jpg.8f841bb85ca8be7dd00ad472b7499abe.jpg"
+      },
+      {
+        "title": "Tech Innovation Workshop",
+        "organization": "Innovate Tomorrow",
+        "location": "Tech Hub, Anytown",
+        "description": "Explore the exciting world of technology and innovation by joining our Tech Innovation Workshop. As a participant, you'll have the chance to delve into cutting-edge technologies, work on hands-on projects, and collaborate with industry professionals.",
+        "date": "2023-12-15",
+        "time": "2:00 PM - 5:00 PM",
+        "contact": {
+          "name": "Alex Mitchell",
+          "email": "alex.mitchell@example.com",
+          "phone": "555-999-1234"
+        },
+        "image":"https://cdn.filestackcontent.com/no_metadata/output=format:webp/resize=w:200,h:200,fit:max/quality=value:70/compress/cache=expiry:max/vjc94Bd1Q52fgcz5Bs3w"
+      },
+      {
+        "title": "Environmental Advocacy Workshop",
+        "organization": "Green Earth Alliance",
+        "location": "Community Center, Eco City",
+        "description": "Play a crucial role in fostering environmental awareness by joining our Environmental Advocacy Workshop. This event aims to empower individuals with the knowledge and skills needed to make a positive impact on our planet.",
+        "date": "2023-12-15",
+        "time": "2:00 PM - 5:00 PM",
+        "contact": {
+          "name": "Alex Greenfield",
+          "email": "alex.greenfield@example.com",
+          "phone": "555-123-4567"
+        },
+        "image":"https://www.happiness.com/community/uploads/monthly_2019_05/why-volunteering-is-important-benefits-loneliness.jpg.8f841bb85ca8be7dd00ad472b7499abe.jpg"
+      },
+      {
+        "title": "Environmental Stewardship Workshop",
+        "organization": "Green Earth Alliance",
+        "location": "Community Center, Greenfield",
+        "description": "Be a catalyst for positive change in our community by taking part in our Environmental Stewardship Workshop. This interactive session is designed to educate and engage participants on sustainable practices, eco-friendly initiatives, and the importance of environmental conservation.",
+        "date": "2023-12-18",
+        "time": "2:00 PM - 5:00 PM",
+        "contact": {
+          "name": "Alexandra Green",
+          "email": "alexandra.green@example.com",
+          "phone": "555-999-1234"
+        },
+        "image":"https://www.happiness.com/community/uploads/monthly_2019_05/why-volunteering-is-important-benefits-loneliness.jpg.8f841bb85ca8be7dd00ad472b7499abe.jpg"
+      },
+      {
+        "title": "Environmental Conservation Project",
+        "organization": "Earth Guardians Alliance",
+        "location": "Nature Reserve, Green Valley",
+        "description": "Become a steward of the environment by participating in our Environmental Conservation Project. This initiative focuses on preserving and restoring natural habitats in Green Valley. Volunteers will engage in activities such as tree planting, trail maintenance, and wildlife observation. Join us in making a positive impact on our ecosystem, promoting biodiversity, and creating a sustainable future for generations to come.",
+        "date": "2023-12-17",
+        "time": "9:00 AM - 1:00 PM",
+        "contact": {
+          "name": "Sarah Miller",
+          "email": "sarah.miller@example.com",
+          "phone": "555-111-2222"
+        },
+        "image":"https://cdn.filestackcontent.com/no_metadata/output=format:webp/resize=w:200,h:200,fit:max/quality=value:70/compress/cache=expiry:max/vjc94Bd1Q52fgcz5Bs3w"
+      },
+      {
+        "title": "Urban Community Beautification",
+        "organization": "City Pride Initiative",
+        "location": "Downtown, Metropolis City",
+        "description": "Join us in enhancing the beauty of our urban community! Volunteers are needed for a day of city beautification, including street cleaning, mural painting, and planting vibrant flowers in public spaces. Contribute to creating a cleaner, more visually appealing environment for everyone in Metropolis City. Let's come together to foster a sense of pride in our community.",
+        "date": "2023-12-14",
+        "time": "1:00 PM - 4:00 PM",
+        "contact": {
+          "name": "David Wilson",
+          "email": "david.wilson@example.com",
+          "phone": "555-333-5555"
+        },
+        "image":"https://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/nzigtnmjd6boihj2nuvo"
+      },
+      {
+        "title": "Urban Renewal Project",
+        "organization": "City Impact Coalition",
+        "location": "Downtown District, MetroCity",
+        "description": "Join the Urban Renewal Project and be a part of revitalizing our city's downtown district. Volunteers will engage in activities such as graffiti removal, park cleanup, and community beautification projects. ",
+        "date": "2023-12-16",
+        "time": "2:00 PM - 5:00 PM",
+        "contact": {
+          "name": "James Anderson",
+          "email": "james.anderson@example.com",
+          "phone": "555-444-5678"
+        },
+        "image":"https://cdn.filestackcontent.com/no_metadata/output=format:webp/resize=w:668,h:501,fit:max/quality=value:70/compress/cache=expiry:max/eWI6gwieS6dhpq2RtJJk"
+      },
+      {
+        "title": "City Beautification Initiative",
+        "organization": "Urban Renewal Project",
+        "location": "Downtown, Metroville",
+        "description": "Join our City Beautification Initiative to contribute to the revitalization of Downtown Metroville. Volunteers will collaborate on projects such as mural painting, public space cleanup, and urban gardening.",
+        "date": "2023-12-16",
+        "time": "2:00 PM - 5:00 PM",
+        "contact": {
+          "name": "Michael Johnson",
+          "email": "michael.johnson@example.com",
+          "phone": "555-444-5555"
+        },
+        "image":"https://res.cloudinary.com/dktp1ybbx/image/upload/c_limit,h_180,w_180/f_auto,fl_lossy,q_auto/v1702751734/organization/prod/1241884/rCwrf72qhc.jpg"
+      }
+    ]
+
+  
