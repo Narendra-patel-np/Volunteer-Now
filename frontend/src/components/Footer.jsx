@@ -57,22 +57,22 @@ export default function Footer() {
                 </div>
             </div>
         </div>
-      <div className="botttom">
-        <div className="icons">
-          <FaTiktok className="icon" />
-          <FaInstagram className="icon" />
-          <FaFacebook className="icon" />
-          <FaTwitter className="icon" />
+        <div className='botttom'>
+             <div className='icons'>
+                    <FaTiktok className='icon'/>
+                    <FaInstagram className='icon'/>    
+                    <FaFacebook className='icon'/>
+                    <FaTwitter className='icon'/>
+             </div>
+             <div>
+                <p>Copyright C 2023 Volnow.org</p>
+             </div>
+             <div>
+                <p>English | Espanol | Portugues</p>
+             </div>
         </div>
-        <div>
-          <p>Copyright C 2023 Volnow.org</p>
-        </div>
-        <div>
-          <p>English | Espanol | Portugues</p>
-        </div>
-      </div>
-    </DIV>
-  );
+        </DIV>
+    )
 }
 
 const DIV = styled.div`
