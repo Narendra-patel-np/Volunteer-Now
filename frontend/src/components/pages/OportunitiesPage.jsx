@@ -18,6 +18,7 @@ import {
   ModalBody,
   ModalFooter,
 } from "@chakra-ui/react";
+import axios from "axios";
 // import axios from "axios";
 
 const OportunitiesPage = () => {
@@ -290,7 +291,7 @@ const OportunitiesPage = () => {
   // console.log(token);
   const [job, setJobs] = useState([]);
   useEffect(async () => {
-    fetch("https://volnowbackend.up.railway.app/volunteer/opportunities", {
+    fetch("https://rich-lime-seagull-robe.cyclic.app/volunteer/opportunities", {
       method: "GET",
       headers: {
         "Content-type": "application/json",
@@ -321,6 +322,46 @@ const OportunitiesPage = () => {
   const handleJobClick = (job) => {
     setSelectedJob(job);
     setIsModalOpen(true);
+  };
+  const Apply = async (id) => {
+    console.log("inside apply", id);
+    try {
+      // fetch("https://volnowbackend.up.railway.app/volunteer/appliedjobs", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-type": "application/json",
+      //     Authorization: `Bearer ${token}`,
+      //   },
+      //   body: {
+      //     id: id,
+      //   },
+      // })
+      //   .then((res) => {
+      //     console.log(res);
+      //     return res.json();
+      //   })
+      //   .then((data) => {
+      //     console.log(data);
+      //   });
+      let payload = {
+        id,
+      };
+      await axios
+        .post(
+          "https://rich-lime-seagull-robe.cyclic.app/appliedjobs",
+          payload,
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        )
+        .then((res) => {
+          console.log(res);
+        });
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   const closeModal = () => {

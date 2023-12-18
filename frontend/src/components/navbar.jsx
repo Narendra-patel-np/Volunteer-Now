@@ -3,8 +3,28 @@ import { Box, Image, HStack, Button, Text, Link } from "@chakra-ui/react";
 import { NavLink, useNavigate } from "react-router-dom";
 import logo from "./images/Volnow.png";
 import { auth } from "./pages/login";
+import axios from "axios";
 const Navbar = () => {
   // console.log(auth);
+
+  let token = localStorage.getItem("token");
+  const Logout = async () => {
+    console.log("inside logout");
+    try {
+      await axios
+        .get("https://rich-lime-seagull-robe.cyclic.app/users/logout", {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        })
+        .then((res) => {
+          alert(JSON.stringify(res?.data?.msg));
+          localStorage.clear();
+        });
+    } catch (err) {
+      console.log(err);
+    }
+  };
   const Navigate = useNavigate();
   const linkStyle = {
     "font-family": "Poppins",
@@ -81,8 +101,13 @@ const Navbar = () => {
       >
         Log In
       </Button> */}
-      <Button colorScheme="teal" onClick={() => Navigate("/login")}>
-        {auth ? "Log Out" : "Log In"}
+      <Button
+        colorScheme="teal"
+        onClick={() => {
+          token ? Logout() : Navigate("/login");
+        }}
+      >
+        {token ? "Log Out" : "Log In"}
       </Button>
     </Box>
   );

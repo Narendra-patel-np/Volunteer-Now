@@ -8,7 +8,7 @@ const Applied = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get("https://volnowbackend.up.railway.app/volunteer/getappliedJobs")
+      .get("https://rich-lime-seagull-robe.cyclic.app/volunteer/getappliedJobs")
       .then((res) => {
         setData(JSON.parse(res.data));
       })
