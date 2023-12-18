@@ -54,7 +54,7 @@ Our robust backend, powered by the latest technologies, ensures a secure and eff
 
 Our robust Backend Server powers VOLNOW, providing essential data and functionality through a network of well-defined endpoints:
 
-- **Server Link**: [https://volnow-backend-server.com](https://volnow-backend-server.com)
+- **Server Link**: [https://rich-lime-seagull-robe.cyclic.app/](https://rich-lime-seagull-robe.cyclic.app/)
 - **Endpoints**:
   1. `/registers`: Seamlessly manage user data, enabling smooth registration and authentication processes.
   2. `/login`: Access the platform securely with our login endpoint, ensuring a protected user experience.
@@ -69,6 +69,6 @@ Our server ensures the integrity and security of your data, providing a reliable
 
 Experience the power of volunteering with VOLNOW, hosted gracefully on Vercel. Explore the features and start your journey of making a positive impact:
 
-<h1><strong>Vercel Link:</strong> <a href="https://volnow.vercel.app/">volnow</a></h1>
+<h1><strong>Vercel Link:</strong> <a href="https://volnow-81jzth1km-narendra-patel-nps-projects.vercel.app/">volnow</a></h1>
 
 For any inquiries or assistance, our dedicated support team is here to help. Thank you for choosing VOLNOW; let's create a world of positive change together. 🌍✨
