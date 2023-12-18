@@ -42,8 +42,9 @@ const Login = () => {
           .then((res) => {
             console.log(res);
             alert(JSON.stringify(res.data.msg));
+            let token = res.data?.token;
             if (res.data?.token !== undefined) {
-              auth = true;
+              localStorage.setItem("token", token);
             }
             setUser(loginUser);
           })
