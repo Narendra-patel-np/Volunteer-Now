@@ -38,6 +38,7 @@ const Navbar = () => {
       display="flex"
       justifyContent="space-around"
       p={15}
+      zIndex={999}
       boxShadow=" rgba(0, 0, 0, 0.24) 0px 3px 8px"
     >
       <Box display={"flex"} alignItems={"center"}>
