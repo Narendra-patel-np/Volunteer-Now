@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { Box, Button, Input, Stack, Text } from "@chakra-ui/react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-
+export let auth = false;
 const Login = () => {
   const Navigate = useNavigate();
+  // let [auth, setAuth] = useState(false);
   const loginUser = {
     email: "",
     password: "",
@@ -21,19 +22,35 @@ const Login = () => {
   };
   const Login = (e) => {
     e.preventDefault();
-    // console.log(user);
-    if (JSON.stringify(user) === JSON.stringify(LogUser)) {
-      alert("Please fill the details");
-    } else {
+    if (auth) {
+      auth = false;
       axios
-        .post("https://volnowbackend.up.railway.app/users/login", user)
+        .get("https://volnowbackend.up.railway.app/users/logout")
         .then((res) => {
-          console.log(res.data);
           alert(JSON.stringify(res.data.msg));
-          setUser(loginUser);
         });
-      // Navigate("/");
+    } else {
+      if (JSON.stringify(user) === JSON.stringify(LogUser)) {
+        alert("Please fill the details");
+      } else {
+        axios
+          .post("https://volnowbackend.up.railway.app/users/login", user)
+          .then((res) => {
+            console.log(res);
+            alert(JSON.stringify(res.data.msg));
+            if (res.data?.token !== undefined) {
+              auth = true;
+            }
+            setUser(loginUser);
+          })
+          .then((data) => {
+            Navigate("/");
+            console.log("auth", auth);
+          });
+        //
+      }
     }
+    // console.log(user);
   };
   return (
     <Box
