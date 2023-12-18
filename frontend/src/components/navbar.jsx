@@ -2,7 +2,9 @@ import React from "react";
 import { Box, Image, HStack, Button, Text, Link } from "@chakra-ui/react";
 import { NavLink, useNavigate } from "react-router-dom";
 import logo from "./images/Volnow.png";
+import { auth } from "./pages/login";
 const Navbar = () => {
+  // console.log(auth);
   const Navigate = useNavigate();
   const linkStyle = {
     "font-family": "Poppins",
@@ -73,7 +75,7 @@ const Navbar = () => {
         Log In
       </Button> */}
       <Button colorScheme="teal" onClick={() => Navigate("/login")}>
-        Log in
+        {auth ? "Log Out" : "Log In"}
       </Button>
     </Box>
   );
